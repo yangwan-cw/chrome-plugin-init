@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugin CLI</title>
+    <style>
+        h1 {
+            color: #333;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+            width: 350px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .description{
+            font-size: 1.2em;
+            color: #666;
+            flex:1
+        }
+
+        .container .qr-code img{
+            width: 100%;
+            margin-top: 10px;
+        }
+
+ 
+    </style>
+</head>
+<body>
+
+    <h1>Chrome CLI 脚手架</h1>
+
+    <div class="container">
+        <div class="description">
+            欢迎使用 Chrome 插件 CLI 脚手架工具。快速构建和管理你的 Chrome 插件项目！
+        </div>
+        <div class="qr-code">
+            <img src="asset/image.png" alt="Author Image" >
+        </div>
+        <button class="btn" id="openOptionsButton">打开设置</button>
+    </div>
+
+    <script src="popup.js"></script>
+
+
+</body>
+</html>

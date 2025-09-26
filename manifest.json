@@ -1,17 +1,31 @@
 {
     "manifest_version": 3,
-    "name": "xxx",
+    "name": "Chrome Plugin 脚手架",
     "version": "1.0",
-    "description": "xxx",
+    "description": "一个简单的 Chrome 插件脚手架示例",
     "action": {
       "default_popup": "popup.html",
-      "default_icon": "icon.png"
+      "default_icon": "icons/icon.png"
     },
-    "permissions": ["activeTab", "scripting"],
+    "options_page": "options.html", 
+    "options_ui":
+    {
+        "page": "options.html"
+    },
+    "permissions": ["activeTab", "scripting","contextMenus","storage"],
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+      ],
+    "background": {
+      "service_worker": "background.js" 
+    },
     "icons": {
-      "16": "icon16.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     }
   }
   
