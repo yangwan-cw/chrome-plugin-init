@@ -10,7 +10,8 @@
     "options_page": "options.html", 
     "options_ui":
     {
-        "page": "options.html"
+        "page": "options.html",
+        "open_in_tab": true
     },
     "permissions": ["activeTab", "scripting","contextMenus","storage"],
     "content_scripts": [
